@@ -6,7 +6,7 @@
 The `share.here.com` link will be consumed by the `share.here.com` service and your user will be redirected to an appropriate application, depending on their device.
 The redirection logic is handled server-side.
 
-[Link Builder](../../) is a simple interface to create valid `share.here.com` URLs and code snippets.
+[Link Builder](http://heremaps.github.io/map-linkbuilder-app/) is a simple interface to create valid `share.here.com` URLs and code snippets.
 
 You can use the output in your application to provide location related information to your users cross-platform - web, Android and iOS.
 
