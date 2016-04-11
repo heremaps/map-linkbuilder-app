@@ -1,0 +1,10 @@
+{
+    "bitwise": false,
+    "eqnull": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "devel": false,
+    "sub": true,
+    "esversion": 6
+}
