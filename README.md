@@ -1,5 +1,7 @@
 # HERE Link Builder
 
+[![Build Status](https://travis-ci.org/heremaps/map-linkbuilder-app.svg?branch=gh-pages)](https://travis-ci.org/heremaps/map-linkbuilder-app)
+
 ### Synopsis
 
 **Share.here.com** URLs allow you to share HERE Objects - route, address or a POI (Point of Interest).
