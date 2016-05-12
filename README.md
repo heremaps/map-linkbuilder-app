@@ -18,21 +18,21 @@ For extended documentation see [here](https://developer.here.com/rest-apis/docum
 
 Make sure you have already installed the latest version of Node (at least version 4.2) and NPM (Node Package Manager) and then run:
 
-	npm install
+    npm install
 
 ### Running the server
 
-	npm run server
+    npm run server
 
 A static http server will be started on port 5000, i.e. [http://localhost:5000](http://localhost:5000)
 
 ### Tests
 
-Make sure your server is running
+Make sure your server is running and execute
 
-	npm run tests
+    npm run tests
 
-### Other helpful commands:
+### Other helpful commands
 
 * Lint: `npm run lint`
 
