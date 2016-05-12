@@ -16,7 +16,7 @@ For extended documentation see [here](https://developer.here.com/rest-apis/docum
 
 ### Installation
 
-Make sure you have already installed the latest version of Node and NPM (Node Package Manager) and then run:
+Make sure you have already installed the latest version of Node (at least version 4.2) and NPM (Node Package Manager) and then run:
 
 	npm install
 
