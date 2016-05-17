@@ -16,6 +16,9 @@
   "scripts": {
     "lint": "echo '=> linting' && jshint src/builder.js src/utils.js spec/e2e.js src/config.js",
     "server": "http-server -p 5000",
-    "tests": "mocha spec/e2e.js"
+    "test": "mocha spec/e2e.js"
+  },
+  "engines": {
+    "node": ">=4.2.0"
   }
 }
