@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/heremaps/map-linkbuilder-app.svg?branch=gh-pages)](https://travis-ci.org/heremaps/map-linkbuilder-app)
 
+See the [LICENSE](LICENSE) file in the root of this project for license details.
+
 ### Synopsis
 
 **Share.here.com** URLs allow you to share HERE Objects - route, address or a POI (Point of Interest).
@@ -45,7 +47,3 @@ Make sure your server is running and execute
 * [mocha](https://github.com/mochajs/mocha)
 * [awesomplete](https://github.com/LeaVerou/awesomplete) by [Lea Verou](https://github.com/LeaVerou)
 * [http-server](https://github.com/indexzero/http-server) by [indexzero](https://github.com/)
-
-### Copyright
-
-Copyright (c) 2016 HERE Global B.V. and its affiliate(s).
