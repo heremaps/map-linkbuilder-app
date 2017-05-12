@@ -3,11 +3,6 @@ language: node_js
 node_js:
   - "4.2"
 
-# By default, the gh-pages branch is not built unless added to the whitelist.
-branches:
-  only:
-    - gh-pages
-
 # See https://docs.travis-ci.com/user/gui-and-headless-browsers/#Starting-a-Web-Server
 before_script:
   - export DISPLAY=:99.0
