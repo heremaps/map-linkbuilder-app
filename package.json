@@ -7,11 +7,11 @@
   },
   "private": true,
   "devDependencies": {
-    "awesomplete": "https://github.com/LeaVerou/awesomplete#e572530",
-    "http-server": "^0.8.5",
-    "jshint": "^2.9.1",
-    "mocha": "^2.4.5",
-    "selenium-webdriver": "^2.52.0"
+    "awesomplete": "~1.1.1",
+    "http-server": "~0.10.0",
+    "jshint": "~2.9.4",
+    "mocha": "~3.3.0",
+    "selenium-webdriver": "~3.4.0"
   },
   "scripts": {
     "lint": "echo '=> linting' && jshint src/builder.js src/utils.js spec/e2e.js src/config.js",
@@ -19,6 +19,6 @@
     "test": "mocha spec/e2e.js"
   },
   "engines": {
-    "node": ">=4.2.0"
+    "node": "6.10.3"
   }
 }

@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "4.2"
+  - "6.10.3"
 
 # See https://docs.travis-ci.com/user/gui-and-headless-browsers/#Starting-a-Web-Server
 before_script:
