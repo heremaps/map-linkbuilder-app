@@ -3,6 +3,9 @@ language: node_js
 node_js:
   - "6.10.3"
 
+addons:
+  firefox: "53.0.2"
+
 # See https://docs.travis-ci.com/user/gui-and-headless-browsers/#Starting-a-Web-Server
 before_script:
   - export DISPLAY=:99.0
