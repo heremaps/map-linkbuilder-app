@@ -82,7 +82,7 @@ test.describe('Link Builder', function () {
     });
 
     test.beforeEach(function () {
-        driver.get('http:127.0.0.1:5000');
+        driver.get('http://127.0.0.1:5000');
         driver.executeScript('window.scroll(0, 400)');
     });
 
