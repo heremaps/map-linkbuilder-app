@@ -1,0 +1,30 @@
+From 6907a129a3c02fe2dfc54700137e7f9aa025218a Mon Sep 17 00:00:00 2001
+From: skratchdot <git@skratchdot.com>
+Date: Thu, 27 Apr 2017 13:49:56 -0400
+Subject: [PATCH] Stop passing array as "text" when calling sendKeys (#3905)
+
+This was causing an issue with geckodriver v16.0.
+See: https://github.com/mozilla/geckodriver/issues/683
+
+The fix appears to work with both geckodriver and chromedriver,
+but I need to do some more testing.
+---
+ javascript/node/selenium-webdriver/lib/webdriver.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/javascript/node/selenium-webdriver/lib/webdriver.js b/javascript/node/selenium-webdriver/lib/webdriver.js
+index 1c63112d77..34f9309b17 100644
+--- a/javascript/node/selenium-webdriver/lib/webdriver.js
++++ b/javascript/node/selenium-webdriver/lib/webdriver.js
+@@ -2186,7 +2186,7 @@ class WebElement {
+     if (!this.driver_.fileDetector_) {
+       return this.schedule_(
+           new command.Command(command.Name.SEND_KEYS_TO_ELEMENT).
+-              setParameter('text', keys).
++              setParameter('text', keys.then(keys => keys.join(''))).
+               setParameter('value', keys),
+           'WebElement.sendKeys()');
+     }
+-- 
+2.13.0
+

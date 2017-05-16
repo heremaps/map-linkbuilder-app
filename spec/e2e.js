@@ -82,7 +82,7 @@ test.describe('Link Builder', function () {
     });
 
     test.beforeEach(function () {
-        driver.get('http:127.0.0.1:5000');
+        driver.get('http://127.0.0.1:5000');
         driver.executeScript('window.scroll(0, 400)');
     });
 
@@ -96,19 +96,19 @@ test.describe('Link Builder', function () {
         test.it('should generate route from a to b', function () {
             helper.sendKeysSelectOption('.row-route-from', 'Bremen', 'Bremen, Germany');
             helper.sendKeysSelectOption('.row-route-to', 'Berlin', 'Berlin, Germany');
-            helper.assertResult('https://share.here.com/r/53.0751,8.80469,Bremen%2C%20Germany/52.51607,13.37699,Berlin%2C%20Germany?m=d&t=normal');
+            helper.assertResult('https://share.here.com/r/53.0751,8.80469,Bremen%2C%20Germany/52.51605,13.37691,Berlin%2C%20Germany?m=d&t=normal');
         });
 
         test.it('should generate route from mylocation to b', function () {
             helper.selectMyLocation('.row-route-from');
             helper.sendKeysSelectOption('.row-route-to', 'Berlin', 'Berlin, Germany');
-            helper.assertResult('https://share.here.com/r/mylocation/52.51607,13.37699,Berlin%2C%20Germany?m=d&t=normal');
+            helper.assertResult('https://share.here.com/r/mylocation/52.51605,13.37691,Berlin%2C%20Germany?m=d&t=normal');
         });
 
         test.it('should generate route from a to mylocation', function () {
             helper.sendKeysSelectOption('.row-route-from', 'Berlin', 'Berlin, Germany');
             helper.selectMyLocation('.row-route-to');
-            helper.assertResult('https://share.here.com/r/52.51607,13.37699,Berlin%2C%20Germany/mylocation?m=d&t=normal');
+            helper.assertResult('https://share.here.com/r/52.51605,13.37691,Berlin%2C%20Germany/mylocation?m=d&t=normal');
         });
 
         test.describe('Options', function () {
@@ -120,14 +120,14 @@ test.describe('Link Builder', function () {
 
             test.it('should set route mode', function () {
                 $('select option:nth-child(2)', helper.tab).click();
-                helper.assertResult('https://share.here.com/r/mylocation/52.51607,13.37699,Berlin%2C%20Germany?m=pt&t=normal');
+                helper.assertResult('https://share.here.com/r/mylocation/52.51605,13.37691,Berlin%2C%20Germany?m=pt&t=normal');
                 $('select option:nth-child(3)', helper.tab).click();
-                helper.assertResult('https://share.here.com/r/mylocation/52.51607,13.37699,Berlin%2C%20Germany?m=w&t=normal');
+                helper.assertResult('https://share.here.com/r/mylocation/52.51605,13.37691,Berlin%2C%20Germany?m=w&t=normal');
             });
 
             test.it('should set map type', function () {
                 $('.builder-row:nth-of-type(2) select option:nth-child(2)', helper.tab).click();
-                helper.assertResult('https://share.here.com/r/mylocation/52.51607,13.37699,Berlin%2C%20Germany?m=d&t=terrain');
+                helper.assertResult('https://share.here.com/r/mylocation/52.51605,13.37691,Berlin%2C%20Germany?m=d&t=terrain');
             });
 
         });
@@ -142,12 +142,12 @@ test.describe('Link Builder', function () {
         });
 
         test.it('should generate location link', function () {
-            helper.assertResult('https://share.here.com/l/52.51607,13.37699,Berlin%2C%20Germany?t=normal');
+            helper.assertResult('https://share.here.com/l/52.51605,13.37691,Berlin%2C%20Germany?t=normal');
         });
 
         test.it('should set map type', function () {
             $('select option:nth-child(2)', helper.tab).click();
-            helper.assertResult('https://share.here.com/l/52.51607,13.37699,Berlin%2C%20Germany?t=terrain');
+            helper.assertResult('https://share.here.com/l/52.51605,13.37691,Berlin%2C%20Germany?t=terrain');
         });
 
     });
