@@ -34,7 +34,7 @@ A static http server will be started on port 5000, i.e. [http://localhost:5000](
 
 Make sure your server is running and execute
 
-    npm run tests
+    npm run test
 
 ### Other helpful commands
 
