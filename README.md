@@ -34,7 +34,7 @@ A static http server will be started on port 5000, i.e. [http://localhost:5000](
 
 Make sure your server is running and execute
 
-`npm run test`
+`npm test`
 
 > **NOTE**: Tests rely on Firefox 47+. As described on [NPM](https://www.npmjs.com/package/selenium-webdriver), you need to download Mozilla's **[geckodriver](https://github.com/mozilla/geckodriver/releases/)** in order to run them.
 
