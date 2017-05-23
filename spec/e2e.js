@@ -158,7 +158,7 @@ test.describe('Link Builder', function () {
             $('.here-tabs-controls li:nth-child(3)').click();
             helper.setTab('.here-tabs-body>div:nth-child(3)');
             helper.sendKeysSelectOption('.location-box', 'Berlin', 'Berlin, Germany');
-            helper.assertResult('https://share.here.com/p/s-YmI9MTMuMTE5MzclMkM1Mi4zNzYxNSUyQzEzLjY1ODAxJTJDNTIuNjYwNTg7Yz1jaXR5LXRvd24tdmlsbGFnZTtpZD0yNzZ1MzNkYi1mYmNmZmQyZTUyZjk0ZjU2YjZmNTU0YzBiYWEzM2YwNjtsYXQ9NTIuNTE2MDc7bG9uPTEzLjM3Njk4O249QmVybGluO25sYXQ9NTIuNTE2MDc7bmxvbj0xMy4zNzY5ODtoPTYwMTQzNw');
+            helper.assertResult('https://share.here.com/p/s-YmI9MTMuMTE5MzglMkM1Mi4zNzYxNSUyQzEzLjY1ODAxJTJDNTIuNjYwNTg7Yz1jaXR5LXRvd24tdmlsbGFnZTtpZD0yNzZ1MzNkYi1mYmNmZmQyZTUyZjk0ZjU2YjZmNTU0YzBiYWEzM2YwNjtsYXQ9NTIuNTE2MDc7bG9uPTEzLjM3Njk4O249QmVybGluO25sYXQ9NTIuNTE2MDc7bmxvbj0xMy4zNzY5ODtoPTYwMWIzNw');
         });
     });
 });
