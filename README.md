@@ -20,13 +20,13 @@ For extended documentation see [here](https://developer.here.com/rest-apis/docum
 
 ### Installation
 
-Make sure you have already installed the latest version of Node (at least version 4.2) and NPM (Node Package Manager) and then run:
+Make sure you have already installed the latest version of `Node` (at least version 6.10.3) and `NPM` (Node Package Manager) and then run:
 
-    npm install
-
+`npm install`
+    
 ### Running the server
 
-    npm run server
+`npm run server`
 
 A static http server will be started on port 5000, i.e. [http://localhost:5000](http://localhost:5000)
 
@@ -34,7 +34,9 @@ A static http server will be started on port 5000, i.e. [http://localhost:5000](
 
 Make sure your server is running and execute
 
-    npm run test
+`npm run test`
+
+> **NOTE**: Tests rely on Firefox 47+. As described on [NPM](https://www.npmjs.com/package/selenium-webdriver), you need to download Mozilla's **[geckodriver](https://github.com/mozilla/geckodriver/releases/)** in order to run them.
 
 ### Other helpful commands
 
