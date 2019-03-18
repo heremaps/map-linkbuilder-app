@@ -19,12 +19,11 @@ before_install:
   - export PATH=$PATH:$PWD/geckodriver
 
 before_script:
-  # See https://docs.travis-ci.com/user/gui-and-headless-browsers/#Starting-a-Web-Server
+  # Lint code before setting up integration testing:
+  - npm run lint
+  # See https://docs.travis-ci.com/user/gui-and-headless-browsers/#Starting-a-Web-Server:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - sleep 3 # Give Xvfb some time to start.
   - npm run server &
   - sleep 3 # Give the web server some time to bind to sockets, etc.
-
-after_script:
-  - npm run lint
